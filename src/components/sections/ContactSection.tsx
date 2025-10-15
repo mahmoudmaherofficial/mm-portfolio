@@ -36,8 +36,13 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative py-16 overflow-x-hidden">
+    <section id="contact" className="relative py-16 overflow-hidden">
       <div className="container grid items-start gap-16 px-6 mx-auto md:grid-cols-2">
+        {/* Background Glow */}{" "}
+        <div className="absolute inset-0 -z-10">
+          {" "}
+          <div className="absolute top-0 left-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl -translate-x-1/2" />{" "}
+        </div>
         {/* Left: Contact Form */}
         <motion.form
           ref={form}
@@ -70,7 +75,6 @@ export default function ContactSection() {
             {isSending ? "Sending..." : sent ? "Message Sent ✅" : "Send Message"}
           </Button>
         </motion.form>
-
         {/* Right: Contact Info */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}

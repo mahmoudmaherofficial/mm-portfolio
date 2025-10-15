@@ -74,7 +74,7 @@ const HeroSection = () => {
 
         <aside className="relative order-1 mx-auto lg:order-2" aria-label="Profile Image">
           <div className="pt-6 overflow-hidden drop-shadow-2xl w-75 md:w-sm">
-            <img src="me.png" alt="Mahmoud Maher" className="transition-all" />
+            <img src="me.png" alt="Mahmoud Maher" className="transition-all" loading="lazy"/>
           </div>
         </aside>
       </section>

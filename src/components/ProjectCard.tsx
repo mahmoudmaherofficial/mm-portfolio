@@ -34,7 +34,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         <CardDescription className="text-sm text-muted-foreground line-clamp-3">{project.description}</CardDescription>
       </CardHeader>
 
-      <CardContent className="flex flex-wrap gap-2 justify-start">
+      <CardContent className="flex flex-wrap gap-2 !justify-start">
         {project.technologies.map((tech, i) => (
           <Badge key={i} variant="secondary" className="px-2 py-1 text-xs">
             {tech}

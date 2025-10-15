@@ -16,19 +16,19 @@ export default function Footer() {
   const socials = [
     {
       icon: <Github className="w-5 h-5" />,
-      href: "https://github.com/mahmoud",
+      href: "https://github.com/mahmoudmaherofficial",
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
-      href: "https://linkedin.com/in/mahmoud",
+      href: "https://www.linkedin.com/in/mahmoudmaherofficial2/",
     },
     {
       icon: <Mail className="w-5 h-5" />,
-      href: "mailto:mahmoud@example.com",
+      href: "mailto:mahmoudmaherofficial@gmail.com",
     },
     {
       icon: <Globe className="w-5 h-5" />,
-      href: "https://mahmoud.dev",
+      href: "https://mahmoudmaher.netlify.app",
     },
   ];
 
@@ -37,7 +37,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-12">
         {/* Top section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}className="text-center md:text-left">
             <h2 className="text-xl font-bold tracking-tight">Mahmoud Maher</h2>
             <p className="text-sm text-muted-foreground">Building modern web experiences 🚀</p>
           </motion.div>

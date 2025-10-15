@@ -1,9 +1,9 @@
-import type { Project } from '@/constants/projects';
-import { Autoplay, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card';
-import { Badge } from './ui/badge';
-import { Button } from './ui/button';
+import type { Project } from "@/constants/projects";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
@@ -15,7 +15,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           spaceBetween={30}
           slidesPerView={1}
           autoplay={{ delay: 2500, disableOnInteraction: true }}
-          pagination={{ clickable: true }}
+          pagination={{ clickable: true, dynamicBullets: true }}
           className="project-image-swiper h-full w-full">
           {project.images.map((image, index) => (
             <SwiperSlide key={index}>
@@ -58,6 +58,6 @@ const ProjectCard = ({ project }: { project: Project }) => {
       </CardFooter>
     </Card>
   );
-}
+};
 
 export default ProjectCard;

@@ -29,7 +29,7 @@ export const projects: Project[] = [
     images: images("cellstore", 4),
     githubUrl: "https://github.com/mahmoudmaherofficial/new-cell-store",
     liveUrl: "https://cell-store.netlify.app/",
-    technologies: ["Next.js", "Express", "MongoDB", "Node.js", "TailwindCSS"],
+    technologies: ["React.js", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
     description: "A modern, responsive landing page for a smartphone store, built using React.js and Bootstrap. The design focuses on clean visuals, smooth navigation, and mobile-first responsiveness to provide an engaging shopping experience."
   }
 ]

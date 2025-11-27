@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <Card className="pt-0 overflow-hidden rounded-2xl border border-border bg-card shadow-md hover:shadow-lg transition-all duration-300">
+    <Card className="pt-0 overflow-hidden rounded-2xl border border-border bg-card shadow-md hover:shadow-lg transition-all duration-300 h-[32rem]">
       {/* Inner image slider */}
       <div className="relative aspect-video overflow-hidden">
         <Swiper
